@@ -6,5 +6,5 @@ import com.taotao.pojo.TbContent;
 
 public interface ContentService {
 
-	List<TbContent> getContentList(long contentCid);
+	List<TbContent> getContentList(Long contentCid);
 }

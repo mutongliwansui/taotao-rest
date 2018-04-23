@@ -72,4 +72,8 @@
 		<constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
 	</bean>
 	<bean id="jedisClientCluster" class="com.taotao.rest.dao.impl.JedisClientCluster"></bean>-->
+
+	<!-- 扫描包加载Component实现类 -->
+	<context:component-scan base-package="com.taotao.rest.aop"></context:component-scan>
+	<aop:aspectj-autoproxy proxy-target-class="false"/>
 </beans>
